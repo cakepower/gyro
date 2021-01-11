@@ -9,7 +9,7 @@ basic.forever(function () {
     if (gyro_sensor < 5) {
         strip.showColor(neopixel.colors(NeoPixelColors.Indigo))
         basic.pause(100)
-    } else if (gyro_sensor > 75) {
+    } else if (gyro_sensor > 90) {
         strip.showColor(neopixel.colors(NeoPixelColors.Orange))
         basic.pause(100)
     } else {
