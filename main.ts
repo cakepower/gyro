@@ -4,8 +4,8 @@ strip.setBrightness(20)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 basic.pause(100)
 basic.forever(function () {
-    basic.showNumber(input.acceleration(Dimension.X))
-    gyro_sensor = input.acceleration(Dimension.X)
+    basic.showNumber(input.acceleration(Dimension.Z))
+    gyro_sensor = input.acceleration(Dimension.Z)
     if (gyro_sensor < 5) {
         strip.showColor(neopixel.colors(NeoPixelColors.Indigo))
         basic.pause(100)
